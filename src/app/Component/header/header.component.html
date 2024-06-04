@@ -1,0 +1,79 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <div class="image" style="margin-left: 60px;">
+            <img src="../../assets/education.svg">
+            <!-- <img src="../../../assets/person.svg"> -->
+            <p class="para">Bookstore</p>
+            
+        </div>
+        
+        <div class="search" style="margin-left: 30px;" >
+            <mat-form-field appearance="fill"  class="searchinput">
+                <mat-icon  matPrefix style="color: #878787;">search</mat-icon>
+                <input matInput class="search-bar" style="color: #878787;" type="text"  placeholder="Search.." (keyup)="search($event)">
+            </mat-form-field>
+        </div>
+        <div class="person" (click)="profiledata()" >
+            <img   class="person-img pt-3"  src="../../assets/person.svg">
+            <p style="font-size: 10px;padding-bottom: 10px;color: white;">{{"Ramya"}}</p>
+        </div>
+        <div class="signup" *ngIf="loginclick">
+            <dialog open id="dialog">
+              <span>Welcome</span>
+              <div class="text">
+                <p style="font-size: 11px; color: #878787;">To access account and manage orders</p>
+              </div>
+              <div class="button1">
+                <button class="login-signup-button" (click)="login()">LOGIN/SIGNUP</button>
+              </div>
+              
+              <div class="divider">
+                <mat-divider></mat-divider>
+              </div>
+              <div class="person-profile2" style="display: flex; color: #878787;" >
+                <div> <img  (click)="profile()"  class="profile" src="../../assets/shoping_bag.svg"></div>
+               <div> <p style=" padding-left: 10px;font-size: 13px;">My Orders</p></div>
+            </div>
+            <div class="person-profile3" style="display: flex; flex-direction: column;" >
+              <div style="display: flex; color: #878787;" >
+              <div> <img  (click)="profile()"  class="profile" src="../../assets/favorite.svg" style="margin-right: 10px;" /></div>
+             <div> <p style=" padding-left: 10px;font-size: 13px;">My whishlist</p></div>
+            </div>
+            
+          </div>
+            </dialog>
+          </div>
+       
+        <div class="loggedin" *ngIf="loggedin" >
+            <dialog open id="dialog" >
+                <div  ><p style="font-size: 15px;"> Hello {{"Ramya ,"}}</p></div>
+                <div class="person-profile" style="display: flex; color: #878787;" >
+                  <div> <img  (click)="profile()"  class="profile" src="../../assets/person-male.svg"  ></div>
+                 <div> <p style=" padding-left: 10px;font-size: 13px;">{{"Profile"}}</p></div>
+              </div>
+              <div class="person-profile2" style="display: flex; color: #878787;" >
+                <div> <img  (click)="profile()"  class="profile" src="../../assets/shoping_bag.svg" (click)="gotoOrders()"></div>
+               <div> <p style=" padding-left: 10px;font-size: 13px;">My Orders</p></div>
+            </div>
+            <div class="person-profile3" style="display: flex; flex-direction: column;" >
+              <div style="display: flex; color: #878787;" >
+              <div> <img  (click)="profile()"  class="profile" src="../../assets/favorite.svg" (click)="wishlist()" /></div>
+             <div> <p style=" padding-left: 10px;font-size: 13px;">My whishlist</p></div>
+            </div>
+            <div class="lbutton">
+              <button (click)="logout()" >Logout</button>
+            </div>
+          </div>
+          
+            </dialog>
+        </div>
+
+        <div class="wishlist-icon" style="margin-right: 50px; margin-left: 50px;" >
+            <img  class="cart-icon" style="color: white;" src="../../assets/shopping-cart.svg" (click)="tocart()"  >
+            <p style="color: white;font-size: 10px;padding-bottom: 10px;">Cart</p>
+          </div>
+    
+
+    </mat-toolbar-row>
+
+</mat-toolbar>

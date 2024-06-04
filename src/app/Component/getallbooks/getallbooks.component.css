@@ -1,0 +1,147 @@
+
+
+
+.book-count-row{
+    width: 66%;
+    margin: 0px auto;
+    margin-top: 25px;
+    height: 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book-count-col1{
+    display: flex;
+    align-items: center;
+}
+
+.book-count-row .book-count-col1 h1{
+   
+    margin-top: 15px;
+    font: normal normal normal 25px/33px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    margin-right: 5px;
+}
+
+.book-count-row .book-count-col1 mat-hint{
+    font: normal normal normal 12px/16px Roboto;
+    letter-spacing: 0px;
+    color: #9D9D9D;
+}
+
+.book-count-row .book-count-col2 select{
+    position: relative;
+    right: 0px;
+    border-radius: 0px;
+    height: 30px;
+}
+
+.book-count-col2 select option{
+    height: 25px !important;
+}
+
+
+.card-container{
+    width: 66%;
+    margin: 0px auto;
+    margin-top: 5px;
+    height: fit-content;
+   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+.prev-next{
+    margin: 0px auto;
+   
+    text-align: center;
+    
+}
+
+
+
+.ngx-pagination .current {
+    background: #A03037 !important;
+}
+.for-mb-2{
+    height: 50px;
+}
+.mat-menu-item {
+    border: 1px solid black;
+  }
+  
+  /* Styles for the dialog box */
+dialog {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the dialog box */
+.loggedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Styles for the profile section */
+.person-profile,
+.orders {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* Image styles */
+.person-profile img,
+.orders img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Button styles */
+.lbutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.lbutton button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.lbutton button:hover {
+  background-color: #0056b3;
+}
+
+/* Paragraph styles */
+dialog p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Add padding to the dialog's inner elements */
+dialog > div {
+  padding: 5px 0;
+}
